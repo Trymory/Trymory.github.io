@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>WODWM Home</title>
+    <title>WODWM Ministries</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,6 +18,26 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+	<!-- My styles -->
+	<style>
+		.scrollBar::-webkit-scrollbar {
+			width: 1em;
+		}
+ 
+		.scrollBar::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		}
+ 
+		.scrollBar::-webkit-scrollbar-thumb {
+		  background-color: red;
+		  outline: 1px solid slategrey;
+		  border-radius: 10px;
+		}
+		
+		.scrollBar{
+			padding-right: 10px;
+		}
+	</style>
   </head>
   <body>
 
@@ -84,13 +104,12 @@
         <div class="row align-items-center justify-content-center site-hero-inner">
           <div class="col-md-8 text-center">
   
-            <div class="mb-5 element-animate">
+            <div class="mb-5 element-animate" style="background-color: rgba(0,0,0,0.5); border-radius: 30px; padding-bottom: 10px; margin-top: 30px;">
               <div class="block-17">
-                <h1 class="heading mb-4">Our Ministries</h1>
-                <div class="lead">Look through the many ministries, and find what you're looking for.</div>
+                <h1 class="heading mb-4" style="text-shadow: 2px 2px 4px #000000">Our Ministries</h1>
+                <div class="lead" style="text-shadow: 2px 2px 4px #000000; color: snow" >Look through the many ministries, and find what you're looking for.</div>
               </div>
-            </div>
-            
+            </div>            
           </div>
         </div>
       </div>
@@ -101,29 +120,37 @@
       <div class="container" >
         <div class="row">
           <div class="col-md-4">
-            <div class="block-36" style="background-image: url('images/green-dust-and-scratches.png');">
+            <div class="block-36 " style="background-image: url('images/green-dust-and-scratches.png');">
               <h3 class="block-36-heading">Ministries Links</h3>
-              <ul>
-                <li><button onclick="changeText(0)" class="miniButton">Ministry 1</button></li>
-                <li><button onclick="changeText(1)" class="miniButton">Ministry 2</button></li>
-                <li><button onclick="changeText(2)" class="miniButton">Ministry 3</button></li>
-                <li><button onclick="changeText(3)" class="miniButton">Ministry 4</button></li> 
-                <li><button onclick="changeText(4)" class="miniButton">Ministry 5</button></li>
-				<li><button onclick="changeText(5)" class="miniButton">Ministry 6</button></li>
-				<li><button onclick="changeText(6)" class="miniButton">Ministry 7</button></li>
-              </ul>
+			  <div class = "scrollBar" style="overflow:hidden; overflow-y:scroll; height:450px;">
+				  <ul>
+					<li><button onclick="changeText(0)" class="miniButton">Music Ministry</button></li>
+					<li><button onclick="changeText(1)" class="miniButton">Men's Ministry</button></li>
+					<li><button onclick="changeText(2)" class="miniButton">Women's Ministry </button></li>
+					<li><button onclick="changeText(3)" class="miniButton">Youth Ministry </button></li> 
+					<li><button onclick="changeText(4)" class="miniButton">Gatekeepers Ministry</button></li>
+					<li><button onclick="changeText(5)" class="miniButton">New Members Ministry</button></li>
+					<li><button onclick="changeText(6)" class="miniButton">Technology/Media Ministry</button></li>
+					<li><button onclick="changeText(7)" class="miniButton">Arts & Drama Ministry</button></li>
+					<li><button onclick="changeText(8)" class="miniButton">Couple's Ministry</button></li>
+					<li><button onclick="changeText(9)" class="miniButton">Prayer & Intercessory Ministry</button></li>
+					<li><button onclick="changeText(10)" class="miniButton">New Converts</button></li>
+					<li><button onclick="changeText(11)" class="miniButton">Christian Education</button></li>
+					<li><button onclick="changeText(12)" class="miniButton">Leadership Education & Development Ministry</button></li>
+					<li><button onclick="changeText(13)" class="miniButton">Outreach and Evangelism</button></li>
+				  </ul>
+			  </div>
             </div>
           </div>
           <div class="col-md-8 pl-md-5"style="margin-top: -50px;">
-			<h2 id="ministryHeader">Ministry 1</h2>
-            <p><img src="images/big_image_1.jpg" alt="Ministries" class="miniPicClass" id="miniPics"></p>
-            <p id="miniDiscription">First discription</p>
+			<h2 id="ministryHeader">Voices of Deliverance</h2>
+            <p id="miniDiscription">First summary</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
+    <footer id="footer" class="site-footer">
       <div class="container">
         <div class="row mb-5">
         <!--   <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
@@ -134,27 +161,21 @@
             <div class="row">
               <div class="col-md-4">
                 <ul class="list-unstyled">
-                  <li><a href="#">Ministry #1</a></li>
-                  <li><a href="#">Ministry #2</a></li>
-                  <li><a href="#">Ministry #3</a></li>
-                  <li><a href="#">Ministry #4</a></li>
-				  <li><a href="#">Ministry #5</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Ministries</a></li>
+                  <li><a href="#">Service Sundays</a></li>
+				  <li><a href="#">Events</a></li>
+				  <li><a href="#">Give</a></li>
+                  <li><a href="#">About Us</a></li>                  
                 </ul>
-              </div>
+              </div>			  
               <div class="col-md-4">
-                <ul class="list-unstyled">               
-                  <li><a href="#">Ministry #6</a></li>
-                  <li><a href="#">Ministry #7</a></li>
-                  <li><a href="#">Ministry #8</a></li>
-				  <li><a href="#">Ministry #9</a></li>
-				  <li><a href="#">Ministry #10</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Give (Donations)</a></li>
-                  <li><a href="#">Contact</a></li>
+				  <ul class="list-unstyled">
+                  <li><a href="#">Ministries</a></li>
+                  <li><a href="#">Service Sundays</a></li>
+				  <li><a href="#">Events</a></li>
+				  <li><a href="#">Give</a></li>
+                  <li><a href="#">About Us</a></li>                  
                 </ul>
               </div>
             </div>
@@ -203,20 +224,20 @@
         <div class="row pt-5">
           <div class="col-md-12 text-center copyright">
             
-            <p class="float-md-left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-and <a href="https://softwarecake.github.io" target="_blank" class="text-primary">SoftwareCake</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			<p class="float-md-left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+			and <a href="https://softwarecake.github.io" target="_blank" class="text-primary">SoftwareCake</a>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             <p class="float-md-right">
               <a href="http://www.facebook.com/WODWM1" class="fa fa-facebook p-2"></a>
               <a href="http://www.twitter.com/WODWM" class="fa fa-twitter p-2"></a>
               <a href="http://www.instagram.com/WODWM" class="fa fa-instagram p-2"></a>
+
             </p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- END footer -->
+    </footer>    <!-- END footer -->
 
     </div>
     
