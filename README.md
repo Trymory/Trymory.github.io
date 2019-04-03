@@ -1,1 +1,1 @@
-# Trymory.github.io
+This site is in preview for the development of WODWM website. Due to the sites demo stage there is still comminted out code. The site was has javascript css that is also media sized for mobile devices. It is lacking the calander design and the functionality. I was testing out some methods that I have recently figured out how to do but have no time to. 
